@@ -4,31 +4,60 @@
     <meta charset="UTF-8">
     <title>Megan Gross Porfolio</title>
     <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lora" rel="stylesheet">
 </head>
 <body>
+    <div class="navbar">
+    <nav>
+        <div class="dropdown">
+            <nav class="dropbtn navbar">
+              <a>Home</a> 
+               
+        </nav>
+           <div class="dropdown-content">
+            <a href="/HTML/Home/homepageslideyeet.html">Welcome</a>
+            <a href="/HTML/Home/homeyeet.html">About Me</a>
+            </div>
+        </div>
+        
+   <a href="/HTML/resumeyeet.html">Resume</a>
+         <div class="dropdown">
+            <nav class="dropbtn navbar">
+                <a>Portfolio</a>
+            </nav>
+                <div class="dropdown-content">
+                   <a href="/HTML/Portfolio/portfolioyeet.html">Portfolio Home</a>
+                    <a href="/HTML/Portfolio/art.html">Art</a>
+                    <a href="/HTML/Portfolio/webprojects.html">Web Projects</a>
+                    <a href="/HTML/Portfolio/writing.html">Writing Samples</a>
+                </div>
+        </div>
+        <a href="/HTML/contactyeet.html">Contact</a>
+    </nav>
+</div>
     <div class="slideshow-container">
         <div class="mySlides fade">
-            <div class="numbertext">1/4</div>
+            <div class="numbertext"></div>
            <a href="/HTML/Home/homeyeet.html"> <img src="/Images/homepage/gifffff.gif" alt="" style="width:100%;border:0;"></a>
-            <div class="text">Welcome Page</div>
+            <div class="text">About Me Page</div>
         </div>
     </div>
     <div class="slideshow-container">
         <div class="mySlides fade">
-            <div class="numbertext">2/4</div>
-            <img src="/Images/homepage/giffffffffffffffffffffff.gif" alt="" style="width:100%">
-            <div class="text">Portfolio Page</div>
+            <div class="numbertext"></div>
+            <a href="/HTML/Portfolio/portfolioyeet.html"><img src="/Images/homepage/giffffffffffffffffffffff.gif" alt="" style="width:100%"></a>
+            <div class="text">Portfolio Home</div>
         </div>
     </div><div class="slideshow-container">
         <div class="mySlides fade">
-            <div class="numbertext">3/4</div>
-            <img src="/Images/homepage/giffy.gif" alt="" style="width:100%">
+            <div class="numbertext"></div>
+            <a href="/HTML/resumeyeet.html"><img src="/Images/homepage/giffy.gif" alt="" style="width:100%"> </a>
             <div class="text">Resume Page</div>
         </div>
     </div><div class="slideshow-container">
         <div class="mySlides fade">
-            <div class="numbertext">4/4</div>
-            <img src="/Images/homepage/lightning.gif" alt="" style="width:100%">
+            <div class="numbertext"></div>
+           <a href="/HTML/contactyeet.html"> <img src="/Images/homepage/lightning.gif" alt="" style="width:100%"></a>
             <div class="text">Contact Page</div>
         </div>
     
@@ -42,6 +71,7 @@
         <span class="dot" onclick="currentSlide(3)"></span>
         <span class="dot" onclick="currentSlide(4)"></span>
     </div>
+    <p class="hometext">Welcome to my website! I spent many hours of many days working on this. This website shows my independent skills at their finest. I poured my heart and soul into this website so I really hope you enjoy :) </p>
     <script>
         var slideIndex = 1;
         showSlides(slideIndex);
