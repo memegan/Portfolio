@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Megan Gross Porfolio</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Indie+Flower|Lora" rel="stylesheet">
+</head>
+<body>
+    <div class="navbar">
+    <nav>
+        <div class="dropdown">
+            <nav class="dropbtn navbar">
+              <a>Home</a> 
+               
+        </nav>
+           <div class="dropdown-content">
+            <a href="/index.html">Welcome</a>
+            <a href="/homeyeet.html">About Me</a>
+            </div>
+        </div>
+        
+   <a href="/resumeyeet.html">Resume</a>
+         <div class="dropdown">
+            <nav class="dropbtn navbar">
+                <a>Portfolio</a>
+            </nav>
+                <div class="dropdown-content">
+                   <a href="/portfolioyeet.html">Portfolio Home</a>
+                    <a href="/art.html">Art</a>
+                    <a href="/webprojects.html">Web Projects</a>
+                    <a href="/writing.html">Writing Samples</a>
+                </div>
+        </div>
+        <a href="/contactyeet.html">Contact</a>
+    </nav>
+</div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+           <a href="/homeyeet.html"> <img src="/Images/homepage/gifffff.gif" alt="" style="width:100%;border:0;"></a>
+            <div class="text">About Me Page</div>
+        </div>
+    </div>
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <a href="/portfolioyeet.html"><img src="/Images/homepage/giffffffffffffffffffffff.gif" alt="" style="width:100%"></a>
+            <div class="text">Portfolio Home</div>
+        </div>
+    </div><div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+            <a href="/resumeyeet.html"><img src="/Images/homepage/giffy.gif" alt="" style="width:100%"> </a>
+            <div class="text">Resume Page</div>
+        </div>
+    </div><div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext"></div>
+           <a href="/contactyeet.html"> <img src="/Images/homepage/lightning.gif" alt="" style="width:100%"></a>
+            <div class="text">Contact Page</div>
+        </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+    <div style="text-align: center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+    <p class="hometext">Welcome to my website! I spent many hours of many days working on this. This website shows my independent skills at their finest. I poured my heart and soul into this website so I really hope you enjoy :) </p>
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+            
+        }
+    function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1} 
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none"; 
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block"; 
+  dots[slideIndex-1].className += " active";
+}
+    
+    
+    </script>
+</body>
+</html>
